@@ -1,0 +1,22 @@
+{
+  "name": "h5-1910xm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "jQuery": "^1.7.4",
+    "requirejs": "^2.3.6",
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

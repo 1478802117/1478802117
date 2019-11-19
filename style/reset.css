@@ -1,0 +1,57 @@
+/* reset css */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+fieldset,
+legend,
+select,
+blockquote,
+address,
+ul,
+ol,
+dl,
+dt,
+dd,
+header,
+footer,
+section,
+input,
+button,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+a,
+ins {
+    text-decoration: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+em,
+i,
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+samp {
+    font-style: normal;
+    font-weight: normal;
+}

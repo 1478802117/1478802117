@@ -1,0 +1,141 @@
+#home-page a {
+  background-color: none;
+}
+#home-page:hover a {
+  background-color: #ff5757;
+}
+.center > span {
+  display: block;
+  padding-left: 10px;
+  line-height: 31px;
+  border-bottom: 1.5px solid #8C0001;
+}
+.center > span a {
+  color: #8C0001;
+  font-size: 14px;
+  font-weight: bold;
+}
+.bottom-left {
+  width: 35%;
+  padding: 0 5px;
+  float: left;
+}
+.login-left-top {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  height: 40px;
+  margin-top: 20px;
+}
+.login-left-top li {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: white;
+  width: 140px;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 1px;
+  left: 13px;
+}
+.login-form b {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  height: auto;
+  margin-left: 5px;
+  display: block;
+  position: relative;
+  margin: 15px 0;
+}
+.login-form b i {
+  background: url(../img/login_icon.png);
+  background-position: 0 -60px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 30px;
+  height: 20px;
+  display: block;
+}
+.login-form b input {
+  border: 0;
+  background-color: transparent;
+  height: 35px;
+  margin: 5px 5px 5px 35px;
+  font-size: 16px;
+  font-weight: normal;
+  width: 350px;
+}
+#login-form2 i {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: url(../img/login_icon.png) no-repeat;
+  background-position: 0 -40px;
+  width: 30px;
+  height: 20px;
+}
+#login-form3 {
+  width: 150px;
+  overflow: hidden;
+}
+#login-form3 i {
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  background: url(../img/login_icon.png) no-repeat;
+  width: 30px;
+  height: 20px;
+}
+#login-form3 input {
+  width: 110px;
+}
+.denglu {
+  margin: 10px 0;
+}
+.denglu i {
+  width: 150px;
+  font-size: 18px;
+  background-color: #8C0001;
+  border-color: #8C0001;
+  color: #FFF;
+  border-width: 1px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.denglu a {
+  margin-left: 10px;
+  color: #333;
+}
+.denglu a:hover {
+  color: #8C0001;
+}
+.bottom-right {
+  float: right;
+  padding: 50px 250px 0 0;
+}
+.bottom-right p {
+  font-size: 18px;
+  line-height: 50px;
+  color: #545454;
+  text-align: left;
+}
+.bottom-right a {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  border-width: 1px;
+  cursor: pointer;
+  background-color: #8C0001;
+  border-color: #8C0001;
+  color: #FFF;
+}
