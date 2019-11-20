@@ -9,7 +9,8 @@
     <!-- <link rel="stylesheet" href="../style/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../style/specific.css">
     <link rel="stylesheet" href="../style/login.css">
-    <script src="../node_modules/requirejs/require.js" data-main="../js/applogin"></script>
+    <link rel="stylesheet" href="../style/zhuce.css">
+    <script src="../node_modules/requirejs/require.js" data-main="../js/appzhuce"></script>
     <title>Document</title>
 </head>
 
@@ -24,7 +25,7 @@
             </ul>
 
             <ul class="top-load-right">
-                <li><a href="javascript:;">设为首页</a> </li>
+                <li><a href="#">设为首页</a> </li>
                 <em>|</em>
                 <li><a href="#">加入收藏</a> </li>
                 <em>|</em>
@@ -86,32 +87,31 @@
             <img src="../img/MoHead_Bg.png" alt="">
             <a href="#">会员登陆页</a>
         </span>
-        <div style="overflow: hidden;">
-            <div class="bottom-left">
-                <ul class="login-left-top">
-                    <li style="text-align: center">会员登陆</li>
-                </ul>
-                <span class="login-form">
-                    <b>
-                        <i></i>
-                        <input type="text" placeholder="用户名" id="login-user">
-                    </b>
-                </span>
-                <span class="login-form">
-                        <b id="login-form2">
-                            <i ></i>
-                            <input type="password" placeholder="密码" id="login-pass">
-                        </b>
-                </span>
-                <span class="denglu">
-                    <i id="login">登陆</i>
-                    <a href="#">忘记密码</a>
-                </span>
+        <div class="zhuce center">
+            <p>会员注册！已经有账号了吗?
+                <a href="login.html">会员登陆</a>
+            </p>
+            <div class="zhuce-input1">
+                <span>用户名 <em>*</em></span>
+                <input class="change-zhuce" type="text" id="name">
+                <i id="namei"></i>
             </div>
-            <div class="bottom-right">
-                <p>还未成为会员</p>
-                <a href="zhuce.html">请先注册</a>
+            <div class="zhuce-input1">
+                <span>密码 <em>*</em></span>
+                <input class="change-zhuce" type="password" id="pass">
+                <i id="passi"></i>
             </div>
+            <div class="zhuce-input1">
+                <span>密码确认<em>*</em></span>
+                <input class="change-zhuce" type="password" id="ture">
+                <i id="turei"></i>
+            </div>
+            <div class="zhuce-input1">
+                <span>邮箱 <em>*</em></span>
+                <input class="change-zhuce" type="text" id="mail">
+                <i id="maili"></i>
+            </div>
+            <i class="zhuce-tijiao">提交</i>
         </div>
     </div>
     <div class="bottom center">
