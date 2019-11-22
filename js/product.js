@@ -5,7 +5,6 @@ define(['jquery', 'cookie'], function($, cookie) {
         render: function(callback) {
 
             let id = location.search.split('=')[1];
-            console.log(id)
             $.ajax({
                 url: `../lib/getitem.php`,
                 type: 'get',
@@ -78,8 +77,8 @@ define(['jquery', 'cookie'], function($, cookie) {
                             </div>
 
                             <div class="btn1">
-                                <a href="#" class="buy1">立即购买</a>
-                                <a href="#" class="buy2">加入购物车</a>
+                                <a href="javascript:;" class="buy1">立即购买</a>
+                                <a href="javascript:;" class="buy2">加入购物车</a>
                             </div>
                     `;
                     $('.item4').append(tempstr);
@@ -88,10 +87,9 @@ define(['jquery', 'cookie'], function($, cookie) {
             })
         },
         addItem: function(id, price, num) {
-            let shop = cookie.get('shop'); // 获取cookie数据 判断是否存在
-            // 如果有cookie  修改cookie
-            // 如果有cookie  添加cookie
 
+            let shop = cookie.get('shop');
+            console.log(shop);
             let product = {
                 id: id,
                 price: price,
@@ -108,8 +106,8 @@ define(['jquery', 'cookie'], function($, cookie) {
                     shop.push(product);
                 }
             } else {
-                shop = []; // 购物车没有内容 新建一个购物车
-                shop.push(product); //将商品放入购物车
+                shop = [];
+                shop.push(product);
             }
             cookie.set('shop', JSON.stringify(shop), 1);
         }

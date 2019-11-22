@@ -1,5 +1,5 @@
-(function() {
-    const cookie = {
+define([], function() {
+    return {
         get: function(key) {
             if (document.cookie) { //判断是否有cookie
                 let arr = document.cookie.split('; '); //拆分cookie
@@ -23,7 +23,6 @@
         remove: function(key) {
             this.set(key, '', -1);
         }
-    };
 
-    window.cookie = cookie;
-})();
+    }
+})

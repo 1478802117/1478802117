@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../style/index1.css" />
+    <link rel="stylesheet" href="../style/specific.css">
+    <script src="../js/require.js" data-main="../js/appshopcar"></script>
+
+    <style>
+        .ul-a {
+            padding: 0;
+            width: 503px;
+            height: 20px;
+            display: flex;
+            background: url(../img/aa.png) no-repeat;
+        }
+        
+        .ul-1 {
+            position: relative;
+        }
+        
+        .ul-a {
+            position: absolute;
+            right: 0;
+            top: 25px;
+        }
+        
+        .ul-a li {
+            margin-top: 20px;
+            width: 167px;
+            text-align: center;
+            list-style: none;
+            font-size: 14px;
+        }
+        
+        .whole {
+            margin-top: 120px;
+            height: 40px;
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .mmm1 {
+            display: flex;
+            height: 46px;
+            line-height: 46px;
+            text-align: left;
+            background-color: #F4F4F5;
+            font-size: 12px;
+            color: #333333;
+        }
+        
+        form {
+            width: 143px;
+        }
+        
+        .sp1 {
+            width: 38%;
+        }
+        
+        .dj1 {
+            width: 12%;
+        }
+        
+        .sh {
+            width: 15%;
+        }
+        
+        .xj {
+            width: 12%
+        }
+        
+        .cz1 {
+            width: 11%
+        }
+        
+        .zy {
+            height: 42px;
+            line-height: 38px;
+            font-size: 14px;
+            color: #333333;
+        }
+        
+        .g1 {
+            border-top: 2px solid #84A9CC;
+        }
+        
+        .gg1 {
+            display: flex;
+            height: 100px;
+            background-color: #F4F4F5;
+            border-bottom: 1px dotted #CFCFCF;
+        }
+        
+        .gg1 img {
+            width: 78px;
+            height: 78px;
+            padding: 10px;
+            vertical-align: center;
+            display: inline-block;
+        }
+        
+        .gg1 form {
+            width: 20px;
+        }
+        
+        .gg1 input {
+            margin-top: 40px;
+        }
+        
+        .sga {
+            width: 456px;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .sga>a {
+            font-size: 14px;
+            color: #333333;
+        }
+        
+        .sg1 {
+            width: 144px;
+            height: 100px;
+            line-height: 100px;
+        }
+        
+        .num1 {
+            width: 180px;
+        }
+        
+        #num {
+            width: 80px;
+        }
+        
+        .num2 {
+            width: 144px;
+            line-height: 100px;
+            color: #333333;
+            text-indent: 20px;
+        }
+        
+        .num3 {
+            text-align: center;
+            line-height: 100px;
+            text-indent: 20px;
+        }
+        
+        .num3>a {
+            font-size: 14px;
+            color: #333333;
+        }
+        
+        .js1 {
+            margin-top: 30px;
+            line-height: 60px;
+        }
+        
+        .js2 {
+            height: 60px;
+            border: 1px solid #CFCFCF;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .js3,
+        .js4 {
+            display: flex;
+        }
+        
+        .js3>input {
+            margin-top: 25px;
+        }
+        
+        .ss4 {
+            width: 140px;
+            height: 60px;
+            text-align: center;
+            background-color: #FFA312;
+            font-size: 14PX;
+            color: white;
+        }
+        
+        .ss3 {
+            font-size: 20px;
+            color: #FF0000;
+            text-align: center;
+            width: 200px;
+        }
+        
+        .ss2 {
+            width: 120px;
+            font-size: 14px;
+            line-height: 60px;
+            color: #888888;
+        }
+        
+        .ss1 {
+            padding: 0 10px;
+            width: 120px;
+            line-height: 60px;
+            color: #888888;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="padding:0;margin:0">
+    <div class="topBar">
+        <div class="topBarL container">
+            <a href="login.html" style="color:black;font-size: 12px">会员登录</a>
+            <em>|</em>
+            <a href="zhuce.html" style="color:black;font-size: 12px">会员注册</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="ul-1">
+            <ul class="ul-a ">
+
+                <li>1.&nbsp;我的购物车</li>
+                <li>2.&nbsp;填写核对订单信息</li>
+                <li>3.&nbsp;成功提交订单</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="whole" style="padding-left: 10px;">全部商品</div>
+    </div>
+
+    <div class="mmm">
+        <div class="container">
+            <div class="mmm1">
+                <form>
+                    <input type="checkbox">全选
+                </form>
+                <div class="sp1">
+                    商品
+                </div>
+                <div class="dj1">
+                    单价(元)
+                </div>
+                <div class="sh">
+                    数量
+                </div>
+                <div class="xj">
+                    小计(元)
+                </div>
+                <div class="cz1">
+                    操作
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="zy container">
+        <form>
+            <input type="checkbox">自营
+        </form>
+    </div>
+
+
+
+
+
+    <div class="gg">
+        <div class="container">
+            <div class="g1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="js1">
+        <div class="container">
+            <div class="js2">
+                <div class="js3">
+                    <!-- <input type="checkbox"> -->
+                    <!-- <div>全选</div> -->
+                    <!-- <div class="ss1">
+                        删除所选中的商品
+                    </div> -->
+                </div>
+                <div class="js4">
+                    <div class="ss2">
+                        已选择<span class="dd" style="font-size:18px;color:red"></span>件商品
+                    </div>
+                    <div class="ss3">
+                        总价:<span class="ee"></span>
+                    </div>
+                    <div class="ss4">
+                        结算
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom center">
+        <div class="bottom1">
+            <a href="#">关于我们</a>
+            <em>|</em>
+            <a href="#">经典案例</a>
+            <em>|</em>
+            <a href="#">新闻动态</a>
+            <em>|</em>
+            <a href="#">服务项目</a>
+            <em>|</em>
+            <a href="#">咨询团队</a>
+            <em>|</em>
+            <a href="#">联系我们</a>
+        </div>
+        <p style="margin-top: 5px;">
+            蜀ICP备17041164
+        </p>
+        <p>
+            <a href="#"> www.tssgsc.com</a>
+        </p>
+        <div style="margin-top: 20px;">
+            <img src="../img/gongshang.gif" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

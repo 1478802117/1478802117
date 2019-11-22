@@ -1,4 +1,5 @@
-define(['jquery', 'md5', 'cookie'], function() {
+define(['jquery', 'md5'], function() {
+    // , 'cookie'
     return {
         login: function() {
             $('#login').on('click', function() {
@@ -11,9 +12,10 @@ define(['jquery', 'md5', 'cookie'], function() {
                         'password': $.md5($('#login-pass').val())
                     },
                     success: function(res) {
+                        // alert('1');
                         if (res == 1) {
-                            cookie.set('islogin', 'ture', 1);
-                            cookie.set('username', $('#login-user').val(), 1);
+                            // cookie.set('islogin', 'ture', 1);
+                            // cookie.set('username', $('#login-user').val(), 1);
                             alert('登陆成功');
                             location.href = "http://127.0.0.1:8080/h5-1910xm/html/index1.html";
                         } else {
